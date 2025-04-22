@@ -1,0 +1,137 @@
+body{
+    background-color: rgb(35, 35, 35);
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+}
+
+#inscreva-btn{
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inscreva-btn:hover{
+    background-color:rgb(132, 14, 201);
+    color: white;
+}
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url('../components/fonts/BillionDreams_PERSONAL.ttf') format('truetype');
+  }
+
+h1{
+    font-size: 80px;
+    font-weight: 200;
+    font-family: 'FonteLogo', serif;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+}
+
+span{
+    color: rgb(132, 14, 201);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+}
+
+img{
+    width: 500px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    font-weight: bold;
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+    background-color:rgb(132, 14, 201);
+    color: white;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+input:hover{
+    background-color:white;
+    color:  rgb(132, 14, 201);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    display: inline-block;
+    margin: 0 30px;
+  }
+  
+  ul li a i {
+    font-size: 2.5rem;
+    transition: color 0.3s;
+  }
+  
+  ul li a i:hover {
+    color: rgb(132, 14, 201);
+  }
