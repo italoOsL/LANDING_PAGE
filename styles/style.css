@@ -55,12 +55,12 @@ h1{
     font-family: 'FonteLogo', serif;
 }
 
-main{
+main {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
-
-}
+    gap: 40px; /* aumenta o espaço entre texto e imagem */
+    justify-content: center;
+  }
 
 h2{
     font-size: 56px;
@@ -72,12 +72,13 @@ span{
 }
 
 p{
-    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
     max-width: 500px;
 }
 
 img{
-    width: 500px;
+    width: 300px;
 }
 
 form{
@@ -134,4 +135,46 @@ ul {
   
   ul li a i:hover {
     color: rgb(132, 14, 201);
+  }
+
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  footer p {
+    margin: 0 auto;
+  }
+
+  .slider {
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 30px;
+  }
+  
+  .slides {
+    display: flex;
+    width: 1500px; /* 3 imagens de 500px */
+    animation: slide 12s infinite;
+  }
+  
+  .slides img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(0); }
+    38% { transform: translateX(-500px); }
+    66% { transform: translateX(-500px); }
+    71% { transform: translateX(-1000px); }
+    100% { transform: translateX(-1000px); }
   }
