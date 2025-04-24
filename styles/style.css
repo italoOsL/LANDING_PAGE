@@ -16,6 +16,14 @@ header{
 
 }
 
+header ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* espaçamento entre os ícones */
+  flex-wrap: wrap;
+  padding: 0;
+}
+
 #title{
     flex-direction: column;
     line-height: 10px;

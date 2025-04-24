@@ -2,7 +2,17 @@
 
     header{
         flex-direction: column;
+        justify-content: space-around;
     }
+
+    header ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 0;
+      }
+    
 
     main{
         flex-direction: column;
