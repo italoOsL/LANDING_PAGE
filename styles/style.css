@@ -33,17 +33,6 @@ a:hover{
     transition: 0.3s all;
 }
 
-#inscreva-btn{
-    border: 2px solid rgb(132, 14, 201);
-    padding: 10px;
-    border-radius: 15px;
-}
-
-#inscreva-btn:hover{
-    background-color:rgb(132, 14, 201);
-    color: white;
-}
-
 @font-face {
     font-family: 'FonteLogo';
     src: url('../components/fonts/BillionDreams_PERSONAL.ttf') format('truetype');
@@ -83,52 +72,37 @@ img{
 }
 
 .slider {
-    width: 400px;
-    height: 450px;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: #000;
-    margin-left: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .slides {
-    display: flex;
-    animation: slide 12s infinite;
-  }
-  
-  .slides img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: contain; /* garante imagem inteira */
-    flex-shrink: 0;
-  }
-
-form{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
+  width: 400px;
+  height: 550px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-form [type="submit"]{
-    height: 50px;
-    width: 50%;
-    background-color: rgb(35, 35, 35);
-    color: white;
-    font-weight: bold;
-    border: 2px solid rgb(132, 14, 201);
-    padding: 10px;
-    border-radius: 15px;
+.slides {
+  display: flex;
+  animation: slide 12s infinite;
+  height: 100%;
+  width: calc(400px * 3); /* mais preciso e escalável */
 }
 
-form [type="submit"]:hover{
-    cursor: pointer;
-    background-color:rgb(132, 14, 201);
-    color: white;
+.slides img {
+  width: 400px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0%, 20%   { transform: translateX(0); }
+  25%, 45%  { transform: translateX(-400px); }
+  50%, 70%  { transform: translateX(-800px); }
+  75%, 100% { transform: translateX(0); }
 }
 
 input{
@@ -167,6 +141,7 @@ ul {
   footer {
     width: 100%;
     text-align: center;
+    margin-top: 20px;
     padding: 30px;
     color: white;
     font-size: 14px;
@@ -176,39 +151,62 @@ ul {
   footer p {
     margin: 0 auto;
   }
+
+  .whatsapp-interativo {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 320px;
+  }
   
-  @keyframes slide {
-    0% { transform: translateX(0); }
-    33% { transform: translateX(0); }
-    38% { transform: translateX(-400px); }
-    66% { transform: translateX(-400px); }
-    71% { transform: translateX(-800px); }
-    100% { transform: translateX(-800px); }
+  .whatsapp-interativo label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border-color: #1ebe5d;
+    border: 2px;
+    font-size: 16px;
+
+
+  }
+  
+  .whatsapp-interativo select {
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
   }
 
-  .whatsapp-only {
-    margin-top: 40px;
+  .whatsapp-interativo select:hover {
+    border: 2px solid rgb(132, 14, 201); /* roxo no hover */
+    cursor: pointer;
   }
   
-  .whatsapp-only a {
+  #botao-whatsapp {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    background-color: #25D366;
+    border: 2px solid #1ebe5d;
+    background-color: #333;
     color: white;
-    padding: 12px 20px;
-    border-radius: 30px;
-    font-size: 16px;
+    padding: 15px 15px;           /* ⬅️ altura e largura menores */
+    border-radius: 25px;
     font-weight: bold;
+    font-size: 16px;             /* ⬅️ texto menor */
     text-decoration: none;
+    box-shadow: 2px 2px 4px #00000070;
     transition: background-color 0.3s ease, transform 0.2s;
+    width: fit-content;          /* ⬅️ se ajusta ao conteúdo */
+    margin-top: 5px;
+
   }
   
-  .whatsapp-only a i {
-    font-size: 20px;
-  }
-  
-  .whatsapp-only a:hover {
-    background-color: #1ebe5d;
-    transform: scale(1.05);
+  #botao-whatsapp:hover {
+    border: 2px solid #1ebe5d;
+    background-color: #1ebe5d;; /* roxo no hover */
+    transform: scale(1.02);
   }

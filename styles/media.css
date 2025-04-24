@@ -2,6 +2,7 @@
 
     header{
         flex-direction: column;
+        ;
     }
 
     main{
@@ -12,20 +13,29 @@
         font-size: 38px;
     }
 
-    form{
-        margin: 0 auto;
-        width: 100%;
-    }
-
     input{
         align-self: center;
+        justify-content: space-between;
     }
 
     img{
-        display: none;
+        align-items: center;
     }
 
+    .whatsapp-interativo select{
+        border: 2px solid rgb(132, 14, 201); /* roxo no hover */
+        cursor: pointer;
+      }
+
+    #botao-whatsapp{
+        background-color: #1ebe5d;; /* roxo no hover */
+      }
+
     ul{
+        text-align: center;
+    }
+
+    footer{
         text-align: center;
     }
 }
