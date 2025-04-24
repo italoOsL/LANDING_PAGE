@@ -2,9 +2,11 @@ body{
     background-color: rgb(35, 35, 35);
     color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto; 
     padding: 15px;
+    box-sizing: border-box;
 }
 
 header{
@@ -19,9 +21,14 @@ header{
 header ul {
   display: flex;
   justify-content: center;
-  gap: 20px; /* espaçamento entre os ícones */
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
   padding: 0;
+  list-style: none;
+}
+
+header ul li {
+  display: inline-flex;
 }
 
 #title{
