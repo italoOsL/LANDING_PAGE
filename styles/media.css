@@ -2,7 +2,6 @@
 
     header{
         flex-direction: column;
-        ;
     }
 
     main{
@@ -31,9 +30,6 @@
         background-color: #1ebe5d;; /* roxo no hover */
       }
 
-    ul{
-        text-align: center;
-    }
 
     footer{
         text-align: center;
