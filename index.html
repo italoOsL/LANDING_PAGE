@@ -28,19 +28,12 @@
             <p>Prazer! Me chamo Victor Hugo, mais conhecido como Vhink. Sou especialista em Caligrafia Customizada, mas também trabalho com outros estilos de tatuagem — é só escolher o que mais combina com você!
                 Entre em contato para saber mais e tirar suas dúvidas. Vai ser um prazer transformar sua ideia em arte!
             </p>
-            <div class="whatsapp-interativo">
-                <label for="mensagem">Como posso te ajudar?</label>
-                <select id="mensagem">
-                  <option value="" disabled selected>Escolha uma opção</option>  
-                  <option value="Olá, gostaria de solicitar um orçamento.">Solicitar Orçamento</option>
-                  <option value="Olá, quero agendar um horário.">Agendar Horário</option>
-                  <option value="Olá, tenho uma dúvida sobre seu trabalho.">Outras Dúvidas</option>
-                </select>
-                <a href="#" id="botao-whatsapp" onclick="enviarWhatsApp()">
+            <h3>Como posso te ajudar?</h3>
+            
+                <a href="https://wa.me/5521972834901" id="botao-whatsapp" target="_blank">
                   <i class="fab fa-whatsapp"></i> Fale comigo no WhatsApp
                 </a>
               </div>
-
         </aside>
 
         <article class="slider">
@@ -56,13 +49,5 @@
         <p>&copy; 2025 VhInk Tattoo | Caligrafia & Arte</p>
     </footer>
 
-    <script>
-        function enviarWhatsApp() {
-          const numero = "5521972834901"; // seu número com DDD e 55
-          const mensagem = document.getElementById("mensagem").value;
-          const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-          window.open(url, '_blank');
-        }
-        </script>
 </body>
 </html>
