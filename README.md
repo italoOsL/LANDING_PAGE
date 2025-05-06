@@ -5,29 +5,29 @@ Este é um projeto de Landing Page responsiva desenvolvido para o artista Victor
 (Insira aqui um print ou link para o site publicado, se houver)
 
 🚀 Funcionalidades
-Página inicial com apresentação do artista;
+  - Página inicial com apresentação do artista;
 
-Botões com redirecionamento para redes sociais:
+  - Botões com redirecionamento para redes sociais:
 
-Instagram
+  - Instagram
 
-TikTok
+  - TikTok
 
-Pinterest
+  - Pinterest
 
-Carrossel de imagens com exemplos de trabalhos;
+  - Carrossel de imagens com exemplos de trabalhos;
 
-Botão de contato direto via WhatsApp com mensagem personalizada;
+  - Botão de contato direto via WhatsApp com mensagem personalizada;
 
-Design responsivo para dispositivos móveis.
+  - Design responsivo para dispositivos móveis.
 
 🛠️ Tecnologias Utilizadas
-HTML5 – Estrutura da página;
+  - HTML5 – Estrutura da página;
 
-CSS3 – Estilização com style.css e media.css;
+  - CSS3 – Estilização com style.css e media.css;
 
-Font Awesome – Ícones das redes sociais e WhatsApp;
+  - Font Awesome – Ícones das redes sociais e WhatsApp;
 
-Responsividade – Adaptada para diferentes tamanhos de tela;
+  - Responsividade – Adaptada para diferentes tamanhos de tela;
 
-Carrossel de imagens manual via HTML/CSS.
+  - Carrossel de imagens manual via HTML/CSS.
